@@ -1,0 +1,109 @@
+{
+  "name": "Corvus Cabal",
+  "leaders": [
+    {
+      "name": "Shadow Piercer",
+      "points": 185,
+      "movement": 5,
+      "toughness": 4,
+      "health": 20,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    }
+  ],
+  "fighters": [
+    {
+      "name": "Cabalist with Familiar",
+      "points": 60,
+      "movement": 5,
+      "toughness": 3,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Shrike Talon",
+      "points": 185,
+      "movement": 8,
+      "toughness": 4,
+      "health": 20,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 5,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Cabalist with Spear",
+      "points": 75,
+      "movement": 5,
+      "toughness": 3,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 4,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Cabalist",
+      "points": 65,
+      "movement": 5,
+      "toughness": 3,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Spire Stalker",
+      "points": 140,
+      "movement": 5,
+      "toughness": 4,
+      "health": 15,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    }
+  ]
+}
