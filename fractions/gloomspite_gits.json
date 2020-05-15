@@ -1,0 +1,202 @@
+{
+  "name": "Gloomspite Gits",
+  "leaders": [
+    {
+      "name": "Boingrot Bounder Staff - Leader",
+      "points": 250,
+      "movement": 10,
+      "toughness": 4,
+      "health": 22,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 5,
+          "strenght": 5,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Boingrot Bounder Spear - Leader",
+      "points": 265,
+      "movement": 8,
+      "toughness": 5,
+      "health": 24,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 4,
+          "strenght": 5,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    },
+    {
+      "name": "Grot - Leader",
+      "points": 150,
+      "movement": 4,
+      "toughness": 4,
+      "health": 16,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    }
+  ],
+  "fighters": [
+    {
+      "name": "Boingrot Sword",
+      "points": 200,
+      "movement": 10,
+      "toughness": 4,
+      "health": 16,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 5,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Boingrot Spear",
+      "points": 220,
+      "movement": 8,
+      "toughness": 5,
+      "health": 18,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 3,
+          "strenght": 5,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    },
+    {
+      "name": "Cave Squiq",
+      "points": 140,
+      "movement": 4,
+      "toughness": 4,
+      "health": 15,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 5,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Squiq Herder",
+      "points": 45,
+      "movement": 4,
+      "toughness": 3,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 2
+        }
+      ]
+    },
+    {
+      "name": "Stecha",
+      "points": 70,
+      "movement": 4,
+      "toughness": 4,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Pieksa",
+      "points": 70,
+      "movement": 4,
+      "toughness": 4,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Shoota",
+      "points": 65,
+      "movement": 4,
+      "toughness": 3,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 12,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 2
+        }
+      ]
+    },
+    {
+      "name": "Netta",
+      "points": 45,
+      "movement": 4,
+      "toughness": 3,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 2
+        }
+      ]
+    }
+  ]
+}
