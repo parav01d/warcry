@@ -36,7 +36,7 @@ const plotDamageOutput = (yourWarband, enemyWarband, distance) => {
 		}, 0)
 	}, 0);
 	if(damage > 0) {
-		logRed(`[${distance} inch] potential ${damage} damage`);
+		logRed(`[${distance} inch] potential ${damage} damage (one attack of all fighters against all enemies)`);
 	}
 }
 
@@ -59,7 +59,7 @@ const calculateDamageOutput = (fighter, enemy, distance) => {
 		return acc;
 	}, 0)
 	if(damage > 0) {
-		logGreen(`[${distance} inch] ${fighter.name} vs. ${enemy.name} ${Math.round(damage * 100) / 100} damage`)
+		logGreen(`[${distance} inch] ${fighter.name} vs. ${enemy.name} ${Math.round(damage * 100) / 100} damage per attack`)
 	}
 	return damage;
 }
