@@ -4,20 +4,27 @@ const rotbringers = require('./fractions/maggotkin_of_nurgle_rotbringers.json')
 const yourFraction = rotbringers;
 const enemyFraction = rotbringers;
 
+const logGreen = (text) => {
+	console.log('\x1b[32m%s\x1b[0m', text);
+}
+const logRed = (text) => {
+	console.log('\x1b[31m%s\x1b[0m', text);
+}
+
 const plotName = (fraction) => {
-	console.log(fraction.name);
-	console.log("-".repeat(fraction.name.length + 1));
+	logRed(fraction.name);
+	logRed("-".repeat(fraction.name.length + 1));
 }
 
 const plotPoints = (warband) => {
 	warband.forEach(fighter => {
-		console.log(`[${fighter.points}] ${fighter.name}` );
+		logGreen(`[${fighter.points}] ${fighter.name}` );
 	})
-	console.log(`${warband.reduce( (points, fighter) => (points + fighter.points), 0)}`);
+	logGreen(`[${warband.reduce( (points, fighter) => (points + fighter.points), 0)}]`);
 }
 
 const plotNumberOfFighters = (warband) => {
-		console.log(`${warband.length} Fighters`);
+		logGreen(`${warband.length} Fighters`);
 }
 
 const plotDamageOutput = (yourWarband, enemyWarband, distance) => {
@@ -27,7 +34,7 @@ const plotDamageOutput = (yourWarband, enemyWarband, distance) => {
 		}, 0)
 	}, 0);
 
-	console.log(`[${distance} inch] potential ${damage} damage`);
+	logRed(`[${distance} inch] potential ${damage} damage`);
 }
 
 const calculateDamageOutput = (fighter, enemy, distance) => {
@@ -49,7 +56,7 @@ const calculateDamageOutput = (fighter, enemy, distance) => {
 		return acc;
 	}, 0)
 	if(damage > 0) {
-		console.log(`    ${fighter.name} vs. ${enemy.name} ${Math.round(damage * 100) / 100} damage`)
+		logGreen(`[${distance} inch] ${fighter.name} vs. ${enemy.name} ${Math.round(damage * 100) / 100} damage`)
 	}
 	return damage;
 }
@@ -95,23 +102,20 @@ while(true) {
 		}
 	}
 
-	console.log("YOUR WARBAND");
 	plotName(yourFraction);
 	plotPoints(yourWarband);
 	plotNumberOfFighters(yourWarband);
-	console.log("");
-	console.log("ENEMY WARBAND");
+	logRed("");
 	plotName(enemyFraction);
 	plotPoints(enemyWarband);
 	plotNumberOfFighters(enemyWarband);
-	console.log("")
-	console.log("Damage Statistic")
-	console.log("Every friendly fighter attacks each enemy Fighter once")
+	logRed("")
+	logRed("Every friendly fighter attacks each enemy Fighter once")
 	range(20).forEach(distance => {
 		plotDamageOutput(yourWarband, enemyWarband, distance);
 	})
-	console.log("")
-	console.log("Every enemy fighter attacks each of your Fighters once")
+	logRed("")
+	logRed("Every enemy fighter attacks each of your Fighters once")
 		range(20).forEach(distance => {
 			plotDamageOutput(enemyWarband, yourWarband, distance);
 	})
