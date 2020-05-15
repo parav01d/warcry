@@ -34,13 +34,13 @@ const calculateDamageOutput = (fighter, enemy, distance) => {
 	const damage = fighter.weapons.reduce((acc, weapon) => {
 		const { strenght, minRange, maxRange, damage } = weapon;
 		var maxDamage = 0;
-		if(strenght < enemy.toughness && minRange < distance && maxRange > distance) {
+		if(strenght < enemy.toughness && minRange < distance && maxRange >= distance) {
 			maxDamage = ((1/6) * weapon.crit) + ((1/6) * damage)
 		}
-		if(strenght === enemy.toughness && minRange < distance && maxRange > distance) {
+		if(strenght === enemy.toughness && minRange < distance && maxRange >= distance) {
 			maxDamage = ((1/6) * weapon.crit) + ((2/6) * damage)
 		}
-		if(strenght > enemy.toughness && minRange < distance && maxRange > distance) {
+		if(strenght > enemy.toughness && minRange < distance && maxRange >= distance) {
 			maxDamage = ((1/6) * weapon.crit) + ((3/6) * damage)
 		}
 		if(maxDamage > acc) {
@@ -49,7 +49,7 @@ const calculateDamageOutput = (fighter, enemy, distance) => {
 		return acc;
 	}, 0)
 	if(damage > 0) {
-		console.log(`    ${fighter.name} vs. ${enemy.name} ${damage} damage`)
+		console.log(`    ${fighter.name} vs. ${enemy.name} ${Math.round(damage * 100) / 100} damage`)
 	}
 	return damage;
 }
@@ -110,6 +110,10 @@ while(true) {
 	range(20).forEach(distance => {
 		plotDamageOutput(yourWarband, enemyWarband, distance);
 	})
-
+	console.log("")
+	console.log("Every enemy fighter attacks each of your Fighters once")
+		range(20).forEach(distance => {
+			plotDamageOutput(enemyWarband, yourWarband, distance);
+	})
 	break;
 }
