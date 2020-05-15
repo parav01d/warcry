@@ -2,8 +2,9 @@
 const rotbringers = require('./fractions/maggotkin_of_nurgle_rotbringers.json');
 const ogor = require('./fractions/ogor_mawtribes.json');
 const corvus = require('./fractions/corvus_cabal.json');
+const sylvaneth = require('./fractions/sylvaneth.json');
 
-const yourFraction = ogor;
+const yourFraction = sylvaneth;
 const enemyFraction = corvus;
 
 const logGreen = (text) => {

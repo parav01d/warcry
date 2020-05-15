@@ -1,0 +1,227 @@
+{
+  "name": "Sylvaneth",
+  "leaders": [
+    {
+      "name": "Tree Revenant - Leader",
+      "points": 120,
+      "movement": 4,
+      "toughness": 3,
+      "health": 16,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 3,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Dryad - Leader",
+      "points": 145,
+      "movement": 5,
+      "toughness": 3,
+      "health": 20,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Kurnoth Hunter with Sword - Leader",
+      "points": 230,
+      "movement": 4,
+      "toughness": 4,
+      "health": 35,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 5,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    },
+    {
+      "name": "Kurnoth Hunter with Bow - Leader",
+      "points": 240,
+      "movement": 4,
+      "toughness": 4,
+      "health": 35,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 20,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 5
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Kurnoth Hunter with Staff - Leader",
+      "points": 240,
+      "movement": 4,
+      "toughness": 4,
+      "health": 35,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 3,
+          "crit": 6
+        }
+      ]
+    },
+    {
+      "name": "Spite Revenant - Leader",
+      "points": 140,
+      "movement": 4,
+      "toughness": 3,
+      "health": 16,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 5,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    }
+  ],
+  "fighters": [
+    {
+      "name": "Tree Revenant",
+      "points": 50,
+      "movement": 4,
+      "toughness": 3,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Kurnoth Hunter with Sword",
+      "points": 180,
+      "movement": 4,
+      "toughness": 4,
+      "health": 30,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    },
+    {
+      "name": "Kurnoth Hunter with Bow",
+      "points": 200,
+      "movement": 4,
+      "toughness": 4,
+      "health": 30,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 20,
+          "attacks": 2,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 5
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Kurnoth Hunter with Staff",
+      "points": 190,
+      "movement": 4,
+      "toughness": 4,
+      "health": 30,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 3,
+          "crit": 6
+        }
+      ]
+    },
+    {
+      "name": "Spite Revenant",
+      "points": 70,
+      "movement": 4,
+      "toughness": 3,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Dryad",
+      "points": 70,
+      "movement": 5,
+      "toughness": 3,
+      "health": 10,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    }
+  ]
+}
