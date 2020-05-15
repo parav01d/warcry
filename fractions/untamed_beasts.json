@@ -1,0 +1,142 @@
+{
+  "name": "Untamed Beasts",
+  "leaders": [
+    {
+      "name": "Heart Eater - Leader",
+      "points": 180,
+      "movement": 5,
+      "toughness": 4,
+      "health": 20,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    }
+  ],
+  "fighters": [
+    {
+      "name": "First Fang",
+      "points": 140,
+      "movement": 4,
+      "toughness": 4,
+      "health": 15,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 8,
+          "attacks": 2,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 5
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Beast Speaker",
+      "points": 125,
+      "movement": 5,
+      "toughness": 4,
+      "health": 15,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 4,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 2
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Rocktusk Prowler",
+      "points": 180,
+      "movement": 8,
+      "toughness": 4,
+      "health": 20,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    },
+    {
+      "name": "Preytaker with Fanged Axe",
+      "points": 105,
+      "movement": 4,
+      "toughness": 4,
+      "health": 10,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Preytaker with Sawtooth Blade",
+      "points": 105,
+      "movement": 4,
+      "toughness": 4,
+      "health": 10,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 3,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Plains-runner",
+      "points": 55,
+      "movement": 5,
+      "toughness": 3,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    }
+  ]
+}

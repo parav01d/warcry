@@ -3,8 +3,9 @@ const rotbringers = require('./fractions/maggotkin_of_nurgle_rotbringers.json');
 const ogor = require('./fractions/ogor_mawtribes.json');
 const corvus = require('./fractions/corvus_cabal.json');
 const sylvaneth = require('./fractions/sylvaneth.json');
+const untamed = require('./fractions/untamed_beasts.json');
 
-const yourFraction = sylvaneth;
+const yourFraction = untamed;
 const enemyFraction = corvus;
 
 const logGreen = (text) => {
@@ -15,6 +16,7 @@ const logRed = (text) => {
 }
 
 const plotName = (fraction) => {
+	logRed("")
 	logRed("-".repeat(fraction.name.length + 1));
 	logRed(fraction.name);
 	logRed("-".repeat(fraction.name.length + 1));
@@ -28,7 +30,9 @@ const plotPoints = (warband) => {
 }
 
 const plotNumberOfFighters = (warband) => {
-		logGreen(`${warband.length} Fighters`);
+	logRed("");
+	logRed("Number of Fighters")
+	logGreen(`${warband.length} Fighters`);
 }
 
 const plotDamageOutput = (yourWarband, enemyWarband) => {
@@ -92,6 +96,28 @@ const calculateMovementRange = (warband) => {
 	return range;
 }
 
+const plothealth = (warband) => {
+	const statistic = calculatehealth(warband);
+	logRed("");
+	logRed("Health")
+	Object.keys(statistic).forEach(health => {
+		logGreen(`[${health}${health === "Total" ? "" : " Health"}] ${statistic[health]} ${health === "Total" ? "Health" : "Fighters"}`)
+	})
+}
+
+const calculatehealth = (warband) => {
+	const health = { Total: 0 };
+	warband.forEach(fighter => {
+		health.Total = health.Total + fighter.health;
+		if(!health[fighter.health]) {
+			health[fighter.health] = 1;
+		} else {
+			health[fighter.health] = health[fighter.health] + 1;
+		}
+	})
+	return health;
+}
+
 const range = i => i?range(i-1).concat(i):[];
 
 const yourWarband = [];
@@ -119,10 +145,7 @@ while(true) {
 }
 
 while(true) {
-	console.log(enemyWarband);
 	const currentPoints = enemyWarband.reduce( (points, fighter) => {
-		console.log("fighter:")
-		console.log(fighter);
 		return points + fighter.points;
 		}, 0);
 	const possibleFighters = enemyFraction.fighters.reduce((acc, fighter) => {
@@ -132,8 +155,6 @@ while(true) {
 		return acc;
 	}, [])
 	const fighter = possibleFighters[Math.floor(Math.random() * possibleFighters.length)];
-	console.log("random fighter:");
-	console.log(fighter);
 	if(fighter) {
 		enemyWarband.push(fighter);
 	} else {
@@ -146,9 +167,10 @@ plotPoints(yourWarband);
 plotNumberOfFighters(yourWarband);
 plotDamageOutput(yourWarband, enemyWarband);
 plotMovement(yourWarband)
-logRed("")
+plothealth(yourWarband)
 plotName(enemyFraction);
 plotPoints(enemyWarband);
 plotNumberOfFighters(enemyWarband);
 plotDamageOutput(enemyWarband, yourWarband);
 plotMovement(enemyWarband)
+plothealth(enemyWarband)
