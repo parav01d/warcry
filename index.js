@@ -5,7 +5,7 @@ const corvus = require('./fractions/corvus_cabal.json');
 const sylvaneth = require('./fractions/sylvaneth.json');
 
 const yourFraction = sylvaneth;
-const enemyFraction = corvus;
+const enemyFraction = ogor;
 
 const logGreen = (text) => {
 	console.log('\x1b[32m%s\x1b[0m', text);

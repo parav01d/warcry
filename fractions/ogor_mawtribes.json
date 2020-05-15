@@ -2,7 +2,7 @@
   "name": "Ogor Mawtribes",
   "leaders": [
     {
-      "name": "Bärenfalle - Leader",
+      "name": "Crusher - Leader",
       "points": 285,
       "movement": 4,
       "toughness": 4,
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "name": "Kannone - Leader",
+      "name": "Leadbelcher - Leader",
       "points": 250,
       "movement": 4,
       "toughness": 4,
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "name": "Große Keule - Leader",
+      "name": "Gutlord - Leader",
       "points": 315,
       "movement": 4,
       "toughness": 5,
@@ -63,7 +63,7 @@
   ],
   "fighters": [
     {
-      "name": "Große Keule",
+      "name": "Irongut",
       "points": 235,
       "movement": 4,
       "toughness": 5,
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "name": "Schwert - Keule",
+      "name": "Glutton with paired Club and Blade",
       "points": 205,
       "movement": 4,
       "toughness": 4,
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "name": "Schwert - Faustwaffe",
+      "name": "Glutton with Club and Ironfist",
       "points": 200,
       "movement": 4,
       "toughness": 4,
@@ -114,7 +114,7 @@
       ]
     },
     {
-      "name": "Kannone",
+      "name": "Leadbelcher",
       "points": 230,
       "movement": 4,
       "toughness": 4,
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "name": "Knoblar",
+      "name": "Gnoblar Fighter",
       "points": 45,
       "movement": 4,
       "toughness": 3,
