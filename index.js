@@ -15,6 +15,7 @@ const logRed = (text) => {
 }
 
 const plotName = (fraction) => {
+	logRed("-".repeat(fraction.name.length + 1));
 	logRed(fraction.name);
 	logRed("-".repeat(fraction.name.length + 1));
 }
@@ -30,15 +31,19 @@ const plotNumberOfFighters = (warband) => {
 		logGreen(`${warband.length} Fighters`);
 }
 
-const plotDamageOutput = (yourWarband, enemyWarband, distance) => {
-	const damage = yourWarband.reduce( (fighterDamage, yourFighter) => {
-		return fighterDamage + enemyWarband.reduce((acc, enemyFighter) => {
-			return acc + calculateDamageOutput(yourFighter, enemyFighter, distance, enemyWarband);
-		}, 0)
-	}, 0);
-	if(damage > 0) {
-		logGreen(`[${distance} inch]  ${damage} damage (one attack of all fighters against all enemies)`);
-	}
+const plotDamageOutput = (yourWarband, enemyWarband) => {
+	logRed("");
+	logRed("Damage")
+	range(20).forEach(distance => {
+		const damage = yourWarband.reduce( (fighterDamage, yourFighter) => {
+			return fighterDamage + enemyWarband.reduce((acc, enemyFighter) => {
+				return acc + calculateDamageOutput(yourFighter, enemyFighter, distance, enemyWarband);
+			}, 0)
+		}, 0);
+		if(damage > 0) {
+			logGreen(`[${distance} inch]  ${damage}`);
+		}
+	})
 }
 
 const calculateDamageOutput = (fighter, enemy, distance, enemyWarband) => {
@@ -139,19 +144,11 @@ while(true) {
 plotName(yourFraction);
 plotPoints(yourWarband);
 plotNumberOfFighters(yourWarband);
-logRed("");
-logRed("Every friendly fighter attacks each enemy Fighter once")
-range(20).forEach(distance => {
-	plotDamageOutput(yourWarband, enemyWarband, distance);
-})
+plotDamageOutput(yourWarband, enemyWarband);
 plotMovement(yourWarband)
 logRed("")
 plotName(enemyFraction);
 plotPoints(enemyWarband);
 plotNumberOfFighters(enemyWarband);
-logRed("")
-logRed("Every enemy fighter attacks each of your Fighters once")
-	range(20).forEach(distance => {
-		plotDamageOutput(enemyWarband, yourWarband, distance);
-})
+plotDamageOutput(enemyWarband, yourWarband);
 plotMovement(enemyWarband)
