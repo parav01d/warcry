@@ -42,13 +42,13 @@ const calculateDamageOutput = (fighter, enemy, distance) => {
 		const { strenght, minRange, maxRange, damage } = weapon;
 		var maxDamage = 0;
 		if(strenght < enemy.toughness && minRange < distance && maxRange >= distance) {
-			maxDamage = ((1/6) * weapon.crit) + ((1/6) * damage)
+			maxDamage = (((1/6) * weapon.crit) + ((1/6) * damage)) * weapon.attacks;
 		}
 		if(strenght === enemy.toughness && minRange < distance && maxRange >= distance) {
-			maxDamage = ((1/6) * weapon.crit) + ((2/6) * damage)
+			maxDamage = (((1/6) * weapon.crit) + ((2/6) * damage)) * weapon.attacks;
 		}
 		if(strenght > enemy.toughness && minRange < distance && maxRange >= distance) {
-			maxDamage = ((1/6) * weapon.crit) + ((3/6) * damage)
+			maxDamage = (((1/6) * weapon.crit) + ((3/6) * damage)) * weapon.attacks;
 		}
 		if(maxDamage > acc) {
 			return maxDamage;
