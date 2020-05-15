@@ -1,0 +1,176 @@
+{
+  "name": "Iron Golems",
+  "leaders": [
+    {
+      "name": "Dominar - Leader",
+      "points": 175,
+      "movement": 4,
+      "toughness": 4,
+      "health": 20,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 5,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    }
+  ],
+  "fighters": [
+    {
+      "name": "Ogor Breacher",
+      "points": 235,
+      "movement": 4,
+      "toughness": 5,
+      "health": 30,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 6,
+          "damage": 4,
+          "crit": 8
+        }
+      ]
+    },
+    {
+      "name": "Signifer",
+      "points": 120,
+      "movement": 4,
+      "toughness": 4,
+      "health": 15,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Drillmaster",
+      "points": 125,
+      "movement": 5,
+      "toughness": 4,
+      "health": 15,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        },
+        {
+          "minRange": 0,
+          "maxRange": 3,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 2
+        }
+      ]
+    },
+    {
+      "name": "Prefector",
+      "points": 125,
+      "movement": 4,
+      "toughness": 4,
+      "health": 15,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    },
+    {
+      "name": "Iron Legionary",
+      "points": 80,
+      "movement": 4,
+      "toughness": 5,
+      "health": 10,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Iron Legionary with Bolas",
+      "points": 65,
+      "movement": 4,
+      "toughness": 4,
+      "health": 10,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 3,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 2
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Iron Legionary with Twin Hammers",
+      "points": 70,
+      "movement": 4,
+      "toughness": 4,
+      "health": 10,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Armator",
+      "points": 90,
+      "movement": 3,
+      "toughness": 4,
+      "health": 12,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 4
+        }
+      ]
+    }
+  ]
+}

@@ -4,9 +4,10 @@ const ogor = require('./fractions/ogor_mawtribes.json');
 const corvus = require('./fractions/corvus_cabal.json');
 const sylvaneth = require('./fractions/sylvaneth.json');
 const untamed = require('./fractions/untamed_beasts.json');
+const iron = require('./fractions/iron_golem.json');
 
 const yourFraction = untamed;
-const enemyFraction = corvus;
+const enemyFraction = iron;
 
 const logGreen = (text) => {
 	console.log('\x1b[32m%s\x1b[0m', text);
