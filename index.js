@@ -34,8 +34,9 @@ const plotDamageOutput = (yourWarband, enemyWarband, distance) => {
 			return acc + calculateDamageOutput(yourFighter, enemyFighter, distance);
 		}, 0)
 	}, 0);
-
-	logRed(`[${distance} inch] potential ${damage} damage`);
+	if(damage > 0) {
+		logRed(`[${distance} inch] potential ${damage} damage`);
+	}
 }
 
 const calculateDamageOutput = (fighter, enemy, distance) => {
