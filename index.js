@@ -4,8 +4,8 @@ const ogor = require('./fractions/ogor_mawtribes.json');
 const corvus = require('./fractions/corvus_cabal.json');
 const sylvaneth = require('./fractions/sylvaneth.json');
 
-const yourFraction = rotbringers;
-const enemyFraction = ogor;
+const yourFraction = sylvaneth;
+const enemyFraction = corvus;
 
 const logGreen = (text) => {
 	console.log('\x1b[32m%s\x1b[0m', text);
@@ -37,7 +37,7 @@ const plotDamageOutput = (yourWarband, enemyWarband, distance) => {
 		}, 0)
 	}, 0);
 	if(damage > 0) {
-		logRed(`[${distance} inch] potential ${damage} damage (one attack of all fighters against all enemies)`);
+		logGreen(`[${distance} inch]  ${damage} damage (one attack of all fighters against all enemies)`);
 	}
 }
 
@@ -64,6 +64,27 @@ const calculateDamageOutput = (fighter, enemy, distance, enemyWarband) => {
 		// logGreen(`[${distance} inch] ${fighter.name} vs. ${enemy.name} ${Math.round(damage * 100) / 100} damage per attack`)
 	}
 	return damage;
+}
+
+const plotMovement = (warband) => {
+	const statistic = calculateMovementRange(warband);
+	logRed("");
+	logRed("Movement")
+	Object.keys(statistic).forEach(movement => {
+		logGreen(`[${movement} inch] ${statistic[movement]} Fighters`)
+	})
+}
+
+const calculateMovementRange = (warband) => {
+	const range = {};
+	warband.forEach(fighter => {
+		if(!range[fighter.movement]) {
+			range[fighter.movement] = 1;
+		} else {
+			range[fighter.movement] = range[fighter.movement] + 1;
+		}
+	})
+	return range;
 }
 
 const range = i => i?range(i-1).concat(i):[];
@@ -123,6 +144,7 @@ logRed("Every friendly fighter attacks each enemy Fighter once")
 range(20).forEach(distance => {
 	plotDamageOutput(yourWarband, enemyWarband, distance);
 })
+plotMovement(yourWarband)
 logRed("")
 plotName(enemyFraction);
 plotPoints(enemyWarband);
@@ -132,3 +154,4 @@ logRed("Every enemy fighter attacks each of your Fighters once")
 	range(20).forEach(distance => {
 		plotDamageOutput(enemyWarband, yourWarband, distance);
 })
+plotMovement(enemyWarband)
