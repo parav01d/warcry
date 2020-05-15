@@ -1,0 +1,159 @@
+{
+  "name": "Ogor Mawtribes",
+  "leaders": [
+    {
+      "name": "Bärenfalle - Leader",
+      "points": 285,
+      "movement": 4,
+      "toughness": 4,
+      "health": 40,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 5,
+          "damage": 4,
+          "crit": 8
+        }
+      ]
+    },
+    {
+      "name": "Kannone - Leader",
+      "points": 250,
+      "movement": 4,
+      "toughness": 4,
+      "health": 40,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 10,
+          "attacks": 3,
+          "strenght": 5,
+          "damage": 3,
+          "crit": 6
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Große Keule - Leader",
+      "points": 315,
+      "movement": 4,
+      "toughness": 5,
+      "health": 40,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 6,
+          "damage": 5,
+          "crit": 10
+        }
+      ]
+    }
+  ],
+  "fighters": [
+    {
+      "name": "Große Keule",
+      "points": 235,
+      "movement": 4,
+      "toughness": 5,
+      "health": 30,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 6,
+          "damage": 4,
+          "crit": 8
+        }
+      ]
+    },
+    {
+      "name": "Schwert - Keule",
+      "points": 205,
+      "movement": 4,
+      "toughness": 4,
+      "health": 30,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 5,
+          "damage": 3,
+          "crit": 6
+        }
+      ]
+    },
+    {
+      "name": "Schwert - Faustwaffe",
+      "points": 200,
+      "movement": 4,
+      "toughness": 4,
+      "health": 30,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 5,
+          "damage": 3,
+          "crit": 6
+        }
+      ]
+    },
+    {
+      "name": "Kannone",
+      "points": 230,
+      "movement": 4,
+      "toughness": 4,
+      "health": 30,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 10,
+          "attacks": 3,
+          "strenght": 5,
+          "damage": 3,
+          "crit": 6
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Knoblar",
+      "points": 45,
+      "movement": 4,
+      "toughness": 3,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    }
+  ]
+}

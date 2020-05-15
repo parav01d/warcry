@@ -1,7 +1,8 @@
 
 const rotbringers = require('./fractions/maggotkin_of_nurgle_rotbringers.json')
+const ogor = require('./fractions/ogor_mawtribes.json')
 
-const yourFraction = rotbringers;
+const yourFraction = ogor;
 const enemyFraction = rotbringers;
 
 const logGreen = (text) => {
@@ -63,61 +64,67 @@ const calculateDamageOutput = (fighter, enemy, distance) => {
 
 const range = i => i?range(i-1).concat(i):[];
 
+const yourWarband = [];
+const enemyWarband = [];
+
+yourWarband.push(yourFraction.leaders[Math.floor(Math.random() * yourFraction.leaders.length)]);
+enemyWarband.push(enemyFraction.leaders[Math.floor(Math.random() * enemyFraction.leaders.length)]);
+
 while(true) {
-	const yourWarband = [];
-	const enemyWarband = [];
-
-	yourWarband.push(yourFraction.leaders[Math.floor(Math.random() * yourFraction.leaders.length)]);
-	enemyWarband.push(enemyFraction.leaders[Math.floor(Math.random() * yourFraction.leaders.length)]);
-
-	while(true) {
-		const currentPoints = yourWarband.reduce( (points, fighter) => (points + fighter.points), 0);
-		const possibleFighters = yourFraction.fighters.reduce((acc, fighter) => {
-			if(currentPoints + fighter.points < 1000) {
-				acc.push(fighter);
-			}
-			return acc;
-		}, [])
-		const fighter = possibleFighters[Math.floor(Math.random() * possibleFighters.length)];
-		if(fighter) {
-			yourWarband.push(fighter);
-		} else {
-			break;
+	const currentPoints = yourWarband.reduce( (points, fighter) => {
+		return points + fighter.points;
+	}, 0);
+	const possibleFighters = yourFraction.fighters.reduce((acc, fighter) => {
+		if(currentPoints + fighter.points < 1000) {
+			acc.push(fighter);
 		}
+		return acc;
+	}, [])
+	const fighter = possibleFighters[Math.floor(Math.random() * possibleFighters.length)];
+	if(fighter) {
+		yourWarband.push(fighter);
+	} else {
+		break;
 	}
-
-	while(true) {
-		const currentPoints = enemyWarband.reduce( (points, fighter) => (points + fighter.points), 0);
-		const possibleFighters = enemyFraction.fighters.reduce((acc, fighter) => {
-			if(currentPoints + fighter.points < 1000) {
-				acc.push(fighter);
-			}
-			return acc;
-		}, [])
-		const fighter = possibleFighters[Math.floor(Math.random() * possibleFighters.length)];
-		if(fighter) {
-			enemyWarband.push(fighter);
-		} else {
-			break;
-		}
-	}
-
-	plotName(yourFraction);
-	plotPoints(yourWarband);
-	plotNumberOfFighters(yourWarband);
-	logRed("");
-	plotName(enemyFraction);
-	plotPoints(enemyWarband);
-	plotNumberOfFighters(enemyWarband);
-	logRed("")
-	logRed("Every friendly fighter attacks each enemy Fighter once")
-	range(20).forEach(distance => {
-		plotDamageOutput(yourWarband, enemyWarband, distance);
-	})
-	logRed("")
-	logRed("Every enemy fighter attacks each of your Fighters once")
-		range(20).forEach(distance => {
-			plotDamageOutput(enemyWarband, yourWarband, distance);
-	})
-	break;
 }
+
+while(true) {
+	console.log(enemyWarband);
+	const currentPoints = enemyWarband.reduce( (points, fighter) => {
+		console.log("fighter:")
+		console.log(fighter);
+		return points + fighter.points;
+		}, 0);
+	const possibleFighters = enemyFraction.fighters.reduce((acc, fighter) => {
+		if(currentPoints + fighter.points < 1000) {
+			acc.push(fighter);
+		}
+		return acc;
+	}, [])
+	const fighter = possibleFighters[Math.floor(Math.random() * possibleFighters.length)];
+	console.log("random fighter:");
+	console.log(fighter);
+	if(fighter) {
+		enemyWarband.push(fighter);
+	} else {
+		break;
+	}
+}
+
+plotName(yourFraction);
+plotPoints(yourWarband);
+plotNumberOfFighters(yourWarband);
+logRed("");
+plotName(enemyFraction);
+plotPoints(enemyWarband);
+plotNumberOfFighters(enemyWarband);
+logRed("")
+logRed("Every friendly fighter attacks each enemy Fighter once")
+range(20).forEach(distance => {
+	plotDamageOutput(yourWarband, enemyWarband, distance);
+})
+logRed("")
+logRed("Every enemy fighter attacks each of your Fighters once")
+	range(20).forEach(distance => {
+		plotDamageOutput(enemyWarband, yourWarband, distance);
+})
