@@ -4,7 +4,7 @@ const ogor = require('./fractions/ogor_mawtribes.json');
 const corvus = require('./fractions/corvus_cabal.json');
 const sylvaneth = require('./fractions/sylvaneth.json');
 
-const yourFraction = sylvaneth;
+const yourFraction = rotbringers;
 const enemyFraction = ogor;
 
 const logGreen = (text) => {
@@ -33,7 +33,7 @@ const plotNumberOfFighters = (warband) => {
 const plotDamageOutput = (yourWarband, enemyWarband, distance) => {
 	const damage = yourWarband.reduce( (fighterDamage, yourFighter) => {
 		return fighterDamage + enemyWarband.reduce((acc, enemyFighter) => {
-			return acc + calculateDamageOutput(yourFighter, enemyFighter, distance);
+			return acc + calculateDamageOutput(yourFighter, enemyFighter, distance, enemyWarband);
 		}, 0)
 	}, 0);
 	if(damage > 0) {
@@ -41,7 +41,7 @@ const plotDamageOutput = (yourWarband, enemyWarband, distance) => {
 	}
 }
 
-const calculateDamageOutput = (fighter, enemy, distance) => {
+const calculateDamageOutput = (fighter, enemy, distance, enemyWarband) => {
 	const damage = fighter.weapons.reduce((acc, weapon) => {
 		const { strenght, minRange, maxRange, damage } = weapon;
 		var maxDamage = 0;
@@ -54,13 +54,14 @@ const calculateDamageOutput = (fighter, enemy, distance) => {
 		if(strenght > enemy.toughness && minRange < distance && maxRange >= distance) {
 			maxDamage = (((1/6) * weapon.crit) + ((3/6) * damage)) * weapon.attacks;
 		}
+		maxDamage = maxDamage / enemyWarband.length;
 		if(maxDamage > acc) {
 			return maxDamage;
 		}
 		return acc;
 	}, 0)
 	if(damage > 0) {
-		logGreen(`[${distance} inch] ${fighter.name} vs. ${enemy.name} ${Math.round(damage * 100) / 100} damage per attack`)
+		// logGreen(`[${distance} inch] ${fighter.name} vs. ${enemy.name} ${Math.round(damage * 100) / 100} damage per attack`)
 	}
 	return damage;
 }
@@ -118,14 +119,14 @@ plotName(yourFraction);
 plotPoints(yourWarband);
 plotNumberOfFighters(yourWarband);
 logRed("");
-plotName(enemyFraction);
-plotPoints(enemyWarband);
-plotNumberOfFighters(enemyWarband);
-logRed("")
 logRed("Every friendly fighter attacks each enemy Fighter once")
 range(20).forEach(distance => {
 	plotDamageOutput(yourWarband, enemyWarband, distance);
 })
+logRed("")
+plotName(enemyFraction);
+plotPoints(enemyWarband);
+plotNumberOfFighters(enemyWarband);
 logRed("")
 logRed("Every enemy fighter attacks each of your Fighters once")
 	range(20).forEach(distance => {
