@@ -6,8 +6,9 @@ const sylvaneth = require('./fractions/sylvaneth.json');
 const untamed = require('./fractions/untamed_beasts.json');
 const iron = require('./fractions/iron_golem.json');
 const gits = require('./fractions/gloomspite_gits.json');
+const skaven = require('./fractions/skaven.json');
 
-const yourFraction = sylvaneth;
+const yourFraction = skaven;
 const enemyFraction = gits;
 
 const logGreen = (text) => {

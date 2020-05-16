@@ -1,0 +1,395 @@
+{
+  "name": "Skaven",
+  "leaders": [
+    {
+      "name": "Plaque Monk - Leader",
+      "points": 150,
+      "movement": 6,
+      "toughness": 4,
+      "health": 16,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 3,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Stormvermin - Leader",
+      "points": 170,
+      "movement": 6,
+      "toughness": 4,
+      "health": 20,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Clanrat - Leader",
+      "points": 145,
+      "movement": 6,
+      "toughness": 4,
+      "health": 16,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 3,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    }
+  ],
+  "fighters": [
+    {
+      "name": "Nightrunner",
+      "points": 75,
+      "movement": 6,
+      "toughness": 3,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 8,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 2
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Plaque Monk with Staff",
+      "points": 70,
+      "movement": 6,
+      "toughness": 3,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 5
+        }
+      ]
+    },
+    {
+      "name": "Plaque Monk with Sword",
+      "points": 70,
+      "movement": 6,
+      "toughness": 3,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Clanrat with Sword",
+      "points": 75,
+      "movement": 6,
+      "toughness": 4,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Clanrat with Spear",
+      "points": 75,
+      "movement": 6,
+      "toughness": 4,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Giant Rat",
+      "points": 35,
+      "movement": 8,
+      "toughness": 2,
+      "health": 4,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Stormvermin with Shield",
+      "points": 115,
+      "movement": 6,
+      "toughness": 5,
+      "health": 10,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Stormvermin",
+      "points": 105,
+      "movement": 6,
+      "toughness": 4,
+      "health": 10,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Packmaster",
+      "points": 65,
+      "movement": 6,
+      "toughness": 3,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 3,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 2
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Rat Ogor with Cannon",
+      "points": 235,
+      "movement": 5,
+      "toughness": 4,
+      "health": 40,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 8,
+          "attacks": 2,
+          "strenght": 5,
+          "damage": 3,
+          "crit": 6
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 4,
+          "damage": 4,
+          "crit": 8
+        }
+      ]
+    },
+    {
+      "name": "Rat Ogor",
+      "points": 235,
+      "movement": 5,
+      "toughness": 4,
+      "health": 30,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 4,
+          "crit": 8
+        }
+      ]
+    },
+    {
+      "name": "Stormfiend with green Fists",
+      "points": 265,
+      "movement": 5,
+      "toughness": 5,
+      "health": 35,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 5,
+          "damage": 4,
+          "crit": 8
+        }
+      ]
+    },
+    {
+      "name": "Stormfiend with blue Amor and green Fists",
+      "points": 265,
+      "movement": 5,
+      "toughness": 5,
+      "health": 35,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 4,
+          "crit": 10
+        }
+      ]
+    },
+    {
+      "name": "Stormfiend with Mace Fists",
+      "points": 265,
+      "movement": 5,
+      "toughness": 5,
+      "health": 35,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 5,
+          "strenght": 4,
+          "damage": 4,
+          "crit": 8
+        }
+      ]
+    },
+    {
+      "name": "Stormfiend Sharpshooter",
+      "points": 265,
+      "movement": 5,
+      "toughness": 5,
+      "health": 35,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 20,
+          "attacks": 2,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 4,
+          "damage": 4,
+          "crit": 8
+        }
+      ]
+    },
+    {
+      "name": "Stormfiend Mid Range",
+      "points": 265,
+      "movement": 5,
+      "toughness": 5,
+      "health": 35,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 8,
+          "attacks": 2,
+          "strenght": 5,
+          "damage": 3,
+          "crit": 6
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 4,
+          "damage": 4,
+          "crit": 8
+        }
+      ]
+    },
+    {
+      "name": "Stormfiend with Gatling Gun",
+      "points": 265,
+      "movement": 5,
+      "toughness": 5,
+      "health": 35,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 10,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 4,
+          "damage": 4,
+          "crit": 8
+        }
+      ]
+    }
+  ]
+}
