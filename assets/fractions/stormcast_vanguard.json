@@ -1,0 +1,191 @@
+{
+  "name": "Stormcast Vanguard",
+  "leaders": [
+    {
+      "name": "Raptor Prime Longstrike X-Bow - Leader",
+      "points": 280,
+      "movement": 4,
+      "toughness": 5,
+      "health": 30,
+      "weapons": [
+        {
+          "minRange": 6,
+          "maxRange": 20,
+          "attacks": 1,
+          "strenght": 5,
+          "damage": 4,
+          "crit": 10
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Raptor Prime Hurricane X-Bow - Leader",
+      "points": 245,
+      "movement": 4,
+      "toughness": 5,
+      "health": 30,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 15,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 6
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Prime Hunter",
+      "points": 165,
+      "movement": 4,
+      "toughness": 5,
+      "health": 20,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 8,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 4
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    }
+  ],
+  "fighters": [
+    {
+      "name": "Vanguard Longstrike X-Bow",
+      "points": 225,
+      "movement": 4,
+      "toughness": 5,
+      "health": 20,
+      "weapons": [
+        {
+          "minRange": 6,
+          "maxRange": 20,
+          "attacks": 1,
+          "strenght": 5,
+          "damage": 4,
+          "crit": 10
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Vanguard Hurricane X-Bow",
+      "points": 195,
+      "movement": 4,
+      "toughness": 5,
+      "health": 20,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 15,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 6
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Vanguard Hunter",
+      "points": 165,
+      "movement": 4,
+      "toughness": 5,
+      "health": 20,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 8,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 4
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Aetherwing",
+      "points": 45,
+      "movement": 12,
+      "toughness": 2,
+      "health": 6,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 2,
+          "damage": 1,
+          "crit": 2
+        }
+      ]
+    },
+    {
+      "name": "Gryph Hound",
+      "points": 150,
+      "movement": 6,
+      "toughness": 4,
+      "health": 20,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    }
+  ]
+}

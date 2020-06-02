@@ -1,0 +1,59 @@
+{
+  "name": "Gloomspite Gits",
+  "abilities": [
+    {
+      "dice": 2,
+      "requirement": {
+      	"friend": {
+	  "range": 1
+	}
+      },
+      "who": "Self",
+      "effect": {
+        "attack": 1,
+	"strength": 1
+      }
+    },
+    {
+      "dice": 2,
+      "requirement": {
+      	"enemy": {
+	  "range": 3
+	},
+	"dice": {
+	  "amount": 1,
+	  "min": 3
+	}
+      }",
+      "who": "Enemy",
+      "effect": {
+        "move": null,
+	"disengage": null
+      }
+    },
+    {
+      "dice": 3,
+      "requirement": "Next Move ends 1 Inch of an enemy fighter",
+      "who": "Enemy",
+      "effect": "Damage equal to the Value of the Dice"
+    },
+    {
+      "dice": 3,
+      "requirement": "",
+      "who": "Friendly Fighters whithin 6 Inch",
+      "effect": "+1 Attack"
+    },
+    {
+      "dice": 3,
+      "requirement": "Friendly Beast Fighter within 4 Inch",
+      "who": "Beast Fighter",
+      "effect": "Bonus Move Action"
+    },
+    {
+      "dice": 4,
+      "requirement": "",
+      "who": "Self",
+      "effect:": "+[1] Move Action +[1] Attack Action +[Dice] Damage"
+    }
+  ]
+}

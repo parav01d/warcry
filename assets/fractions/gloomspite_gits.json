@@ -197,6 +197,23 @@
           "crit": 2
         }
       ]
+    },
+    {
+      "name": "Sneaky Snuffler",
+      "points": 85,
+      "movement": 4,
+      "toughness": 3,
+      "health": 15,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
     }
   ]
 }

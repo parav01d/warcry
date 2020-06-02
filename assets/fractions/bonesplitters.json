@@ -1,0 +1,176 @@
+{
+  "name": "Bonesplitters",
+  "leaders": [
+    {
+      "name": "Savage Boss with Chompa and Bone Shield - Leader",
+      "points": 185,
+      "movement": 4,
+      "toughness": 4,
+      "health": 25,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    },
+    {
+      "name": "Savage Morboy Boss - Leader",
+      "points": 205,
+      "movement": 4,
+      "toughness": 4,
+      "health": 25,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 3,
+          "crit": 6
+        }
+      ]
+    },
+    {
+      "name": "Savage Orruk Arrowboy Boss - Leader",
+      "points": 125,
+      "movement": 4,
+      "toughness": 4,
+      "health": 25,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 15,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    }
+  ],
+  "fighters": [
+    {
+      "name": "Savage Orruk with Chompa and Bone Shield",
+      "points": 90,
+      "movement": 4,
+      "toughness": 4,
+      "health": 15,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Savage Big Stabbas",
+      "points": 175,
+      "movement": 4,
+      "toughness": 3,
+      "health": 30,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 5,
+          "damage": 3,
+          "crit": 6
+        }
+      ]
+    },
+    {
+      "name": "Savage Orrok Morboy",
+      "points": 110,
+      "movement": 4,
+      "toughness": 3,
+      "health": 15,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Savage Orrok Morboy with Bone Totem",
+      "points": 110,
+      "movement": 4,
+      "toughness": 3,
+      "health": 15,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 3,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Savage Orruk with savage stikka and Bone Shield",
+      "points": 85,
+      "movement": 4,
+      "toughness": 4,
+      "health": 15,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Savage Orruk Arrowboy",
+      "points": 90,
+      "movement": 4,
+      "toughness": 3,
+      "health": 15,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 15,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 2
+        }
+      ]
+    }
+  ]
+}

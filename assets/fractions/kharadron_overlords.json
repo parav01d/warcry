@@ -1,0 +1,541 @@
+{
+  "name": "Kharadron Overlords",
+  "leaders": [
+    {
+      "name": "Skyrigger with Spear - Leader",
+      "points": 260,
+      "movement": 10,
+      "toughness": 4,
+      "health": 26,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 8,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        },
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    },
+    {
+      "name": "Skyrigger with Pistol - Leader",
+      "points": 265,
+      "movement": 10,
+      "toughness": 4,
+      "health": 26,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 8,
+          "attacks": 2,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 4
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 5,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    },
+    {
+      "name": "Arkanaut - Leader",
+      "points": 170,
+      "movement": 3,
+      "toughness": 4,
+      "health": 22,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 8,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 3,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Grundstock Thunderer - Leader",
+      "points": 195,
+      "movement": 3,
+      "toughness": 4,
+      "health": 22,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 15,
+          "attacks": 4,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 4
+        }
+      ]
+    }
+  ],
+  "fighters": [
+    {
+      "name": "Arkanaut with Harpune",
+      "points": 95,
+      "movement": 3,
+      "toughness": 3,
+      "health": 12,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 20,
+          "attacks": 2,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 5
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Arkanaut with Pistol",
+      "points": 65,
+      "movement": 3,
+      "toughness": 3,
+      "health": 12,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 8,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Arkanaut with Gatling Gun",
+      "points": 105,
+      "movement": 3,
+      "toughness": 3,
+      "health": 12,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 15,
+          "attacks": 6,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Arkanaut with Spear",
+      "points": 80,
+      "movement": 3,
+      "toughness": 3,
+      "health": 12,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    },
+    {
+      "name": "Grundstock Thunderer with Flamethrower",
+      "points": 130,
+      "movement": 3,
+      "toughness": 4,
+      "health": 12,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 6,
+          "attacks": 3,
+          "strenght": 5,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Grundstock Thunderer Grenadier",
+      "points": 145,
+      "movement": 3,
+      "toughness": 4,
+      "health": 12,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 10,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 3,
+          "crit": 6
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Grundstock Thunderer with Shotgun",
+      "points": 130,
+      "movement": 3,
+      "toughness": 4,
+      "health": 12,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 10,
+          "attacks": 5,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 3
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Grundstock Thunderer with Cannon",
+      "points": 115,
+      "movement": 3,
+      "toughness": 4,
+      "health": 12,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 15,
+          "attacks": 2,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Grundstock Thunderer with Big Cannon",
+      "points": 175,
+      "movement": 3,
+      "toughness": 4,
+      "health": 12,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 10,
+          "attacks": 2,
+          "strenght": 5,
+          "damage": 4,
+          "crit": 8
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Skyrigger with Heavy Harpune",
+      "points": 175,
+      "movement": 10,
+      "toughness": 4,
+      "health": 16,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 20,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Skyrigger with Harpune",
+      "points": 170,
+      "movement": 10,
+      "toughness": 4,
+      "health": 16,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 20,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Skyrigger with Heavy Gatling Gun",
+      "points": 205,
+      "movement": 10,
+      "toughness": 4,
+      "health": 16,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 15,
+          "attacks": 6,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Skyrigger with Heavy Speargun",
+      "points": 210,
+      "movement": 10,
+      "toughness": 4,
+      "health": 16,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 20,
+          "attacks": 2,
+          "strenght": 4,
+          "damage": 3,
+          "crit": 5
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Skyrigger with Speargun",
+      "points": 205,
+      "movement": 10,
+      "toughness": 4,
+      "health": 16,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 20,
+          "attacks": 2,
+          "strenght": 4,
+          "damage": 3,
+          "crit": 5
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Skyrigger with Heavy Drillgun",
+      "points": 220,
+      "movement": 10,
+      "toughness": 4,
+      "health": 16,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 20,
+          "attacks": 2,
+          "strenght": 5,
+          "damage": 2,
+          "crit": 4
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Skyrigger with Drillgun",
+      "points": 210,
+      "movement": 10,
+      "toughness": 4,
+      "health": 16,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 20,
+          "attacks": 2,
+          "strenght": 5,
+          "damage": 2,
+          "crit": 4
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Skyrigger with Pistol and Sword",
+      "points": 205,
+      "movement": 10,
+      "toughness": 4,
+      "health": 16,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 8,
+          "attacks": 2,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 4
+        },
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 2,
+          "strenght": 5,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    },
+    {
+      "name": "Skyrigger with Pistol and Spear",
+      "points": 200,
+      "movement": 10,
+      "toughness": 4,
+      "health": 16,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 8,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 4
+        },
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 2,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "name": "Legions of Nagash",
+  "leaders": [
+    {
+      "name": "Necromancer - Leader",
+      "points": 195,
+      "movement": 4,
+      "toughness": 4,
+      "health": 25,
+      "weapons": [
+        {
+          "minRange": 3,
+          "maxRange": 7,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 3,
+          "crit": 6
+        },
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 1,
+          "crit": 4
+        }
+      ]
+    }
+  ],
+  "fighters": [
+    {
+      "name": "Grave Guard with Great Wight Blade",
+      "points": 85,
+      "movement": 3,
+      "toughness": 3,
+      "health": 10,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 5,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    },
+    {
+      "name": "Seneschal - Leader",
+      "points": 120,
+      "movement": 3,
+      "toughness": 3,
+      "health": 15,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 5,
+          "damage": 2,
+          "crit": 5
+        }
+      ]
+    },
+    {
+      "name": "Skeleton Warrior with Ancient Blade",
+      "points": 55,
+      "movement": 3,
+      "toughness": 4,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Skeleton Warrior with Ancient Spear",
+      "points": 55,
+      "movement": 3,
+      "toughness": 4,
+      "health": 8,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 2,
+          "attacks": 2,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 4
+        }
+      ]
+    },
+    {
+      "name": "Skeleton Champion",
+      "points": 80,
+      "movement": 3,
+      "toughness": 4,
+      "health": 12,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    },
+    {
+      "name": "Grave Guard with Wight Blade and Crypt Shield",
+      "points": 90,
+      "movement": 3,
+      "toughness": 4,
+      "health": 10,
+      "weapons": [
+        {
+          "minRange": 0,
+          "maxRange": 1,
+          "attacks": 3,
+          "strenght": 4,
+          "damage": 2,
+          "crit": 4
+        }
+      ]
+    }
+  ]
+}
