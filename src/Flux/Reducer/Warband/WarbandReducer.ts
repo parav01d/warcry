@@ -14,7 +14,7 @@ export const warbandStore: WarbandStore = {
   updatedAt: 0
 }
 
-export const warbandReducer = (store: typeof initialStore, action: WarbandAction) => {
+export const warbandReducer = (store: typeof initialStore, action: any ) => {
   switch (action.type) {
     case addFriendlyFighter.type: {
       store.warbandStore = { ...store.warbandStore, updatedAt: Date.now()}

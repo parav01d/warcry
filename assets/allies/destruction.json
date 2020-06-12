@@ -1,4 +1,22 @@
 {
   "name": "Destruction Allies",
-  "allies": []
+  "allies": [
+    {
+      "name": "Brewgit",
+      "points": 85,
+      "movement": 4,
+      "toughness": 4,
+      "health": 12,
+      "weapons": [
+        {
+          "minRange": 1,
+          "maxRange": 1,
+          "attacks": 4,
+          "strenght": 3,
+          "damage": 1,
+          "crit": 3
+        }
+      ]
+    }
+  ]
 }

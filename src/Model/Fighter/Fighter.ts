@@ -1,7 +1,6 @@
 import { Weapon } from "../Weapon/Weapon";
 
 export type Fighter = {
-  id: number;
   name: string;
   points: number;
   movement: number;
